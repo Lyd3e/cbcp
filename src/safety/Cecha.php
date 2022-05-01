@@ -106,9 +106,9 @@ class Cecha extends Controller
     /**
      * 参数加密
      *
-     * @return \Symfony\Component\HttpFoundation\JsonResponse|JsonResponse
+     * @return string
      */
-    public function paramsToEncrypt(): \Symfony\Component\HttpFoundation\JsonResponse|JsonResponse
+    public function paramsToEncrypt(): string
     {
         //file_get_contents("php://input")获取请求原始数据流
         return Crypt::encryptString(json_encode(json_decode(file_get_contents("php://input"))));
