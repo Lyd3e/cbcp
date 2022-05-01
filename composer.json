@@ -1,0 +1,21 @@
+{
+    "name": "cecha/cbcp",
+    "description": "Cecha's basic Composer package",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Cecha\\Cbcp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Raj Luo",
+            "email": "lyd3e@outlook.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "ext-json": "*"
+    }
+}
