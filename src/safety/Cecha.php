@@ -39,7 +39,7 @@ class Cecha extends Controller
      * @param $request
      * @return \Symfony\Component\HttpFoundation\JsonResponse|JsonResponse
      */
-    public function paramsToDecrypt($request): \Symfony\Component\HttpFoundation\JsonResponse|JsonResponse
+    public function paramsToDecrypt($request)
     {
         //兼容json/urlencode
         $request = $request->all();
